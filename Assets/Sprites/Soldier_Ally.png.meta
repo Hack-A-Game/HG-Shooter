@@ -1,0 +1,419 @@
+fileFormatVersion: 2
+guid: 6e86e3d3e8174e7429024c2c94d96805
+timeCreated: 1456589095
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Soldier_Ally_0
+    21300002: Soldier_Ally_1
+    21300004: Soldier_Ally_2
+    21300006: Soldier_Ally_3
+    21300008: Soldier_Ally_4
+    21300010: Soldier_Ally_5
+    21300012: Soldier_Ally_6
+    21300014: Soldier_Ally_7
+    21300016: Soldier_Ally_8
+    21300018: Soldier_Ally_9
+    21300020: Soldier_Ally_10
+    21300022: Soldier_Ally_11
+    21300024: Soldier_Ally_12
+    21300026: Soldier_Ally_13
+    21300028: Soldier_Ally_14
+    21300030: Soldier_Ally_16
+    21300032: Soldier_Ally_17
+    21300034: Soldier_Ally_18
+    21300036: Soldier_Ally_19
+    21300038: Soldier_Ally_21
+    21300040: Soldier_Ally_22
+    21300042: Soldier_Ally_23
+    21300044: Soldier_Ally_24
+    21300046: Soldier_Ally_25
+    21300048: Soldier_Ally_26
+    21300050: Soldier_Ally_27
+    21300052: Soldier_Ally_28
+    21300054: Soldier_Ally_29
+    21300056: Soldier_Ally_30
+    21300058: Soldier_Ally_31
+    21300060: Soldier_Ally_32
+    21300062: Soldier_Ally_33
+    21300064: Soldier_Ally_34
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Soldier_Ally_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 938
+        width: 50
+        height: 75
+      alignment: 9
+      pivot: {x: .428708851, y: .38910237}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 938
+        width: 48
+        height: 76
+      alignment: 9
+      pivot: {x: .5, y: .395772845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 937
+        width: 55
+        height: 78
+      alignment: 9
+      pivot: {x: .456793219, y: .413678288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 938
+        width: 49
+        height: 76
+      alignment: 9
+      pivot: {x: .475751281, y: .427040488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 938
+        width: 55
+        height: 75
+      alignment: 9
+      pivot: {x: .478396326, y: .389101565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_5
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 941
+        width: 45
+        height: 72
+      alignment: 9
+      pivot: {x: .482397467, y: .417486399}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_6
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 940
+        width: 45
+        height: 74
+      alignment: 9
+      pivot: {x: .491198719, y: .409012258}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_7
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 941
+        width: 47
+        height: 72
+      alignment: 9
+      pivot: {x: .516854167, y: .395483226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 50
+        height: 80
+      alignment: 9
+      pivot: {x: .444551319, y: .37127915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_9
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 831
+        width: 52
+        height: 103
+      alignment: 9
+      pivot: {x: .416217655, y: .300045878}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 832
+        width: 50
+        height: 85
+      alignment: 9
+      pivot: {x: .468314826, y: .350893974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_11
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 833
+        width: 53
+        height: 84
+      alignment: 9
+      pivot: {x: .440216929, y: .363263816}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_12
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 832
+        width: 50
+        height: 96
+      alignment: 9
+      pivot: {x: .452471912, y: .301968902}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 832
+        width: 52
+        height: 94
+      alignment: 9
+      pivot: {x: .416217506, y: .306182206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_14
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 830
+        width: 55
+        height: 84
+      alignment: 9
+      pivot: {x: .391982764, y: .363263816}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_16
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 833
+        width: 54
+        height: 95
+      alignment: 9
+      pivot: {x: .426654965, y: .291545659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_17
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 711
+        width: 52
+        height: 102
+      alignment: 9
+      pivot: {x: .461917132, y: .298085541}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 711
+        width: 50
+        height: 95
+      alignment: 9
+      pivot: {x: .452471912, y: .308222413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 713
+        width: 52
+        height: 92
+      alignment: 9
+      pivot: {x: .416217506, y: .314883679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 711
+        width: 52
+        height: 80
+      alignment: 9
+      pivot: {x: .423834264, y: .356427014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_22
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 711
+        width: 50
+        height: 86
+      alignment: 9
+      pivot: {x: .420787364, y: .343417138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_23
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 713
+        width: 55
+        height: 83
+      alignment: 9
+      pivot: {x: .449592173, y: .337757528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_24
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 711
+        width: 50
+        height: 83
+      alignment: 9
+      pivot: {x: .428708494, y: .337757528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_25
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 713
+        width: 51
+        height: 95
+      alignment: 9
+      pivot: {x: .437871605, y: .287376642}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_26
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 597
+        width: 70
+        height: 75
+      alignment: 9
+      pivot: {x: .443419695, y: .394383132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 584
+        width: 74
+        height: 88
+      alignment: 9
+      pivot: {x: .623100281, y: .644022167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_28
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 572
+        width: 98
+        height: 91
+      alignment: 9
+      pivot: {x: .592953265, y: .761139274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_29
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 567
+        width: 50
+        height: 127
+      alignment: 9
+      pivot: {x: .515842259, y: .624743819}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_30
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 566
+        width: 47
+        height: 125
+      alignment: 9
+      pivot: {x: .5, y: .629908204}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 472
+        width: 56
+        height: 75
+      alignment: 9
+      pivot: {x: .471709788, y: .383821607}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_32
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 472
+        width: 59
+        height: 71
+      alignment: 9
+      pivot: {x: .419444978, y: .483264774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_33
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 460
+        width: 73
+        height: 76
+      alignment: 9
+      pivot: {x: .462021291, y: .656339943}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Soldier_Ally_34
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 460
+        width: 65
+        height: 76
+      alignment: 9
+      pivot: {x: .536559582, y: .588592529}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
