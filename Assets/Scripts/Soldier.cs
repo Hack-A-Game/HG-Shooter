@@ -3,38 +3,53 @@ using System.Collections;
 
 public class Soldier : MonoBehaviour
 {
-    Transform _wrapperTransform;
-    Animator _animator;
-    Rigidbody2D _rigiBody;
+    protected Animator _animator;
+    protected Rigidbody2D _rigidBody;
 
-    private const float SPEED = 80.0f;
-    private const int WALK_ANIMATION = 0;
-    private const int FIRE_ANIMATION = 1;
+    private const float SPEED = 150.0f;
+    protected const int WALK_ANIMATION = 0;
+    protected const int FIRE_ANIMATION = 1;
 
     private const float BULLETS_PER_SECOND = 0.5f;
     private float _lastBullet;
 
-    void Start()
+    protected bool _handleInput;
+
+    virtual public void Start()
     {
         _animator = GetComponent<Animator>();
-        _rigiBody = transform.parent.gameObject.GetComponent<Rigidbody2D>();
         _lastBullet = Time.time;
+        _handleInput = true;
+
+        if (transform.parent)
+        {
+            _rigidBody = GameObject.Find("PlayerWrapper").GetComponent<Rigidbody2D>();
+        }
     }
-	
-	void Update()
+
+    protected void fire()
     {
+        if (Time.time - _lastBullet > 1.0 / BULLETS_PER_SECOND)
+        {
+            _lastBullet = Time.time;
+
+            GameObject gob = AssetLoader.get().instantiate("Bullet");
+            gob.transform.position = transform.position;
+            gob.transform.rotation = transform.rotation;
+        }
+    }
+
+    virtual public void Update()
+    {
+        if (!_handleInput)
+        {
+            return;
+        }
+
 	    if (Input.GetMouseButton(0))
         {
             _animator.SetInteger("State", FIRE_ANIMATION);
-
-            if (Time.time - _lastBullet > 1.0 / BULLETS_PER_SECOND)
-            {
-                _lastBullet = Time.time;
-
-                GameObject gob = AssetLoader.get().instantiate("Bullet");
-                gob.transform.position = transform.position;
-                gob.transform.rotation = transform.rotation;
-            }
+            fire();
         }
         else
         {
@@ -63,6 +78,6 @@ public class Soldier : MonoBehaviour
             velocity += new Vector2(SPEED * Time.deltaTime, 0);
         }
         velocity = transform.rotation * velocity;
-        _rigiBody.velocity = velocity;
+        _rigidBody.velocity = velocity;
     }
 }

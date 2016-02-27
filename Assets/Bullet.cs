@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using System;
 
 public class Bullet : MonoBehaviour
 {
-    private const float SPEED = 200.0f;
+    private const float SPEED = 500.0f;
     private Rigidbody2D _rigidBody;
 
 	void Start()
@@ -19,6 +21,20 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(gameObject);
+        if (other.gameObject.name != "EnemyDetector")
+        {
+            if (other.gameObject.name == "Soldier-Player")
+            {
+                Text life = GameObject.Find("Life").GetComponent<Text>();
+                Int32 newLife = (Int32.Parse(life.text) - 10);
+                life.text = newLife.ToString();
+
+                if (newLife == 0)
+                {
+                    Application.LoadLevel("GameOver");
+                }
+            }
+            Destroy(gameObject);
+        }
     }
 }
