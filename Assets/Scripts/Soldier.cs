@@ -12,6 +12,7 @@ public class Soldier : MonoBehaviour
 
     private const float BULLETS_PER_SECOND = 0.5f;
     private float _lastBullet;
+    private float hp = 100.0f;
 
     protected bool _handleInput;
 
@@ -27,6 +28,17 @@ public class Soldier : MonoBehaviour
         }
     }
 
+    virtual public float takeBullet(Bullet bullet)
+    {
+        hp -= 10.0f;
+        if (hp == 0)
+        {
+            Destroy(gameObject);
+        }
+
+        return hp;
+    }
+
     protected void fire()
     {
         if (Time.time - _lastBullet > 1.0 / BULLETS_PER_SECOND)
@@ -36,6 +48,7 @@ public class Soldier : MonoBehaviour
             GameObject gob = AssetLoader.get().instantiate("Bullet");
             gob.transform.position = transform.position;
             gob.transform.rotation = transform.rotation;
+            gob.GetComponent<Bullet>().setOwner(gameObject);
         }
     }
 
