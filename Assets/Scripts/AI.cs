@@ -24,13 +24,24 @@ public class AI : Soldier
     // Update is called once per frame
     override public void Update()
     {
+        _rigidBody.velocity = Vector2.zero;
+
         if (lookingAtEnemy)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, _lookDirection, 4f, Constants.LAYER_PLAYER_MASK | Constants.LAYER_WALL_MASK);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, _lookDirection, 3.5f, Constants.LAYER_PLAYER_MASK | Constants.LAYER_WALL_MASK);
 
 #if UNITY_EDITOR
-            Debug.DrawLine(transform.position, transform.position + _lookDirection * 4f, Color.red);
+            Debug.DrawLine(transform.position, transform.position + _lookDirection * 3.5f, Color.red);
 #endif
+
+            if (!hit.transform)
+            {
+                hit = Physics2D.Raycast(transform.position, _lookDirection, 5f, Constants.LAYER_PLAYER_MASK | Constants.LAYER_WALL_MASK);
+                if (hit.transform && hit.transform.tag == "Player")
+                {
+                    _rigidBody.velocity = transform.rotation * (new Vector2(0, SPEED) * Time.deltaTime);
+                }
+            }
 
             if (hit.transform && hit.transform.tag == "Player")
             {

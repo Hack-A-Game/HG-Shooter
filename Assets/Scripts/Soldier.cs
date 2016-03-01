@@ -6,7 +6,10 @@ public class Soldier : MonoBehaviour
     protected Animator _animator;
     protected Rigidbody2D _rigidBody;
 
-    private const float SPEED = 150.0f;
+    protected bool hasTriggered = false;
+    protected Vector2 triggerPosition = Vector2.zero;
+
+    protected const float SPEED = 150.0f;
     protected const int WALK_ANIMATION = 0;
     protected const int FIRE_ANIMATION = 1;
 
@@ -25,6 +28,10 @@ public class Soldier : MonoBehaviour
         if (transform.parent)
         {
             _rigidBody = GameObject.Find("PlayerWrapper").GetComponent<Rigidbody2D>();
+        }
+        else
+        {
+            _rigidBody = GetComponent<Rigidbody2D>();
         }
     }
 
@@ -92,5 +99,38 @@ public class Soldier : MonoBehaviour
         }
         velocity = transform.rotation * velocity;
         _rigidBody.velocity = velocity;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.name == "Test")
+        {
+            hasTriggered = true;
+            triggerPosition = transform.position;
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.name == "Test")
+        {
+            hasTriggered = true;
+        }
+    }
+
+    void LateUpdate()
+    {
+        if (hasTriggered)
+        {
+            hasTriggered = false;
+            if (transform.parent)
+            {
+                transform.parent.position = triggerPosition;
+            }
+            else
+            {
+                transform.position = triggerPosition;
+            }
+        }
     }
 }
